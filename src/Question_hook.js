@@ -39,7 +39,7 @@ function Question() {
   const choose = (e) => {
     // TODO : update 'ans' for the option you clicked
     // console.log(e.target.value)
-    setAns([...ans, e.target.value])
+    setAns([...ans, Number(e.target.value)])
   }
 
   const getQuestions = async () => {

@@ -37,9 +37,10 @@ exports.CheckAns = async (req, res) => {
   // s = data.filter(q => q["answer"] == req[q["questionID"]-1]).length;
 
   const s = 0;
-  console.log(req.length)
-  console.log(req)
-  console.log(req.toArray())
+  // console.log(req.length)
+  console.log(req.query)
+  // console.log(req.toArray())
+
   for (var i = 0; req.length < i; i++) {
 		if (req[i] == data[i]["answer"]) {
       s += 1;
